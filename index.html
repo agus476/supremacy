@@ -7,75 +7,119 @@
     <title>Supremacy</title>
    <link rel="stylesheet" href="./css/estilos.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">
+    <header class="header container-fluid">
         <img class="header__logo" src="/Assets/LOGO-02-02.png" alt="Logo de balanceado">
-        <div></div>
-        <nav class="header__nav">
-            <ul class="list">
-                <li class="list__item"><a  class="list__item--line" href="#">Inicio</a></li>
-                <li class="list__item"><a class="list__item--line" href="./Secciones/perros.htm">Perros</a></li>
-                <li class="list__item"><a class="list__item--line" href="./Secciones/gatos.html">Gatos</a></li>
-                <li class="list__item"><a class="list__item--line" href="./Secciones/nuestrospuntos.html">Nuestros productos</a></li>
-                <li class="list__item"><a  class="list__item--line"href="Secciones/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        
+        <nav class="navbar navbar-expand-lg navbar-light header__nav">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav list">
+                  <li class="nav-item list__item">
+                    <a class="nav-link active list__item--line" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item list__item">
+                    <a class="nav-link active list__item--line" href="/Secciones/perros.htm">Perros</a>
+                  </li>
+                  <li class="nav-item list__item">
+                    <a class="nav-link active list__item--line" href="./Secciones/gatos.html">Gatos</a>
+                  </li>
+                  <li class="nav-item list__item">
+                    <a class="nav-link active list__item--line" href="./Secciones/nuestrospuntos.html">Nuestros productos</a>
+                  </li>
+
+                  <li class="nav-item list__item">
+                    <a class="nav-link active list__item--line" href="./Secciones/contacto.html">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
    
     <main>
         <section >
-            <div class="hero" >
+            <div class="hero container-fluid" >
                 <h3 class="hero__text">Cuida a tu mascota de la mejor manera!</h3>
                 
             </div>
         </section>
         
         <section>
-            <div class="menutext" class="jump">
+            <div class="menutext container-fluid">
                 
                 <h3>Quienes somos?</h3>
                 <p class="menutext--text">Somos una compañía dedicada a enriquecer la vida de las mascotas y sus dueños. Descubre qué nos guía.</p>
             
             </div>
-         <div class="menupic">
-            <article class="menupic__art">
-                <img  class="menupic__art--img"src="./Assets/cat.png" alt=""> 
-                    <p class="menupic__text">
-                        
-                        <span>
-                            Las mascotas mejoran nuestra vida, le aportan espontaneidad, nos hacen jugar, amar y encontrar nuevas formas de ver el mundo.
-                        </span> 
-                        
-                        <button class="menupic__button">Leer mas</button>
-                    </p>
-                    
+         <div class="menupic container-fluid">
+            
+                      <div class="row">
+                    <div class="col-md-4">
+                        <article class="menupic__art">
+                            <img  class= "menupic__art--img" src="./Assets/dog.jpg" alt="">
+                            <p class="menupic__text"> 
+                                <span> Trabajamos con más de 500 expertos en todo el mundo, que nos ayudan a crear continuamente productos innovadores para tu mascota.</span>
+                               <button class="menupic__button">Leer mas</button>
+                            </p>
+                            
+                    </div>
 
-                    
-            </article>
-              
-             <article class="menupic__art">
-                <img  class= "menupic__art--img" src="./Assets/dog.jpg" alt="">
-                <p class="menupic__text"> 
-                    <span> Trabajamos con más de 500 expertos en todo el mundo, que nos ayudan a crear continuamente productos innovadores para tu mascota.</span>
-                   <button class="menupic__button">Leer mas</button>
-                </p>
+                    <div class="col-md-4">
+
+                        <article class="menupic__art">
+                            <img  class="menupic__art--img" src="./Assets/pajaro.png" alt="">
+                            <p class="menupic__text">
+                                
+                               <span> Nos aseguramos que la calidad en los procesos de producción sea el ingrediente #1 de nuestros alimentos.</span>
+        
+                              <button class="menupic__button">Leer mas</button>
+                                
+                            </p>
+                            
+        
+                        </article>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <article class="menupic__art">
+                            <img  class="menupic__art--img"src="./Assets/cat.png" alt=""> 
+                                <p class="menupic__text">
+                                    
+                                    <span>
+                                        Las mascotas mejoran nuestra vida, le aportan espontaneidad, nos hacen jugar, amar y encontrar nuevas formas de ver el mundo.
+                                    </span> 
+                                    
+                                    <button class="menupic__button">Leer mas</button>
+                                
+                                </p>
+                         </article>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+              </div>
+             
 
                 
               </article>
                
-                <article class="menupic__art">
-                    <img  class="menupic__art--img" src="./Assets/pajaro.png" alt="">
-                    <p class="menupic__text">
-                        
-                       <span> Nos aseguramos que la calidad en los procesos de producción sea el ingrediente #1 de nuestros alimentos.</span>
-
-                      <button class="menupic__button">Leer mas</button>
-                        
-                    </p>
-                    
-
-                </article>
+              
                   
                 
            </div>
@@ -83,7 +127,7 @@
          </section>
     </main>
     
-    <footer class="foot">
+    <footer class="foot container-fluid">
 
 
         <section class="buttons">
@@ -96,5 +140,7 @@
 
         
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

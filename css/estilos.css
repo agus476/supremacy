@@ -39,7 +39,9 @@
 
 .header__nav{
     position: relative;
-    right: 10rem;
+    right: 5rem;
+    background-color: transparent;
+    
     
 }
 
@@ -129,7 +131,10 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 40rem;
+    align-items:center;
+    height: auto;
+    padding: 7rem;
+    
     
     
 }
@@ -459,18 +464,34 @@ h3{
 
 /* Media query starts  */
     
-@media (max-width:768px)
+@media (max-width:989px)
 {
+
+
+    .header{
+        display:flex;
+        background-image: url(/Assets/fondo\ patitas-01[401].png);
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .header__nav{
+        position: absolute;
+        right: 30rem;
+     
+       }
     .header__logo{
         position: relative;
         margin: 1.25rem 1.25rem 1.25rem 1.25rem;
         padding:1.25rem 1.25rem 1.25rem 1.25rem; 
         border-radius: 50%;
-        height: 8rem;
-        width: 8rem;
-        left: -2rem;
+        height: 12.5 rem;
+        width: 12.5rem;
+        left: 25rem;
     }
-
+    
+   
     .list__item--line{
         text-decoration: none;
         font-family:'HevelticaCond';
@@ -526,64 +547,9 @@ h3{
             font-size: 3rem;
         }
 
-        .header__nav{
-            position: relative;
-            right: 2rem;
-            
-            
-        }
+    
 
-        .menupic{
-            
-            background-color: #FFB600;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 150rem;
-            
-        }
-        
-        
-        .menutext{
-            height: 8rem;
-            padding: 8rem;
-            background-color:#FFB600 ;
-            
-            }
-        
-        
-        .menutext--text{
-            font-family:'HelveticaRoman' ;
-            font-size: 1.6rem;
-        }
-        
-        .menupic__art{
-            height: 400px;
-            width: 300px;
-            
-        }
-        
-        .menupic__art--img{
-            margin-left: 0.938rem;
-            height: 13rem;
-            width: 13rem;
-           border-radius: 50%;
-        }
-        
-        .menupic__text{
-            height: 19rem;
-            width: 13rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            font-family: 'HelveticaRoman';
-            font-size: 1.4rem;
-            
-        }
-
+       
 
         .heroDog{
             display: flex;
