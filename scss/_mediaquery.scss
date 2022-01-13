@@ -1,0 +1,204 @@
+@media (max-width:768px)
+{
+    .header__logo{
+        position: relative;
+        margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+        padding:1.25rem 1.25rem 1.25rem 1.25rem; 
+        border-radius: 50%;
+        height: 8rem;
+        width: 8rem;
+        left: -2rem;
+    }
+
+    .list__item--line{
+        text-decoration: none;
+        font-family:'HevelticaCond';
+        color:black;
+        font-size: 1rem;
+        
+        }
+
+        .list__item{
+    
+            color: whitesmoke;
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            padding: 5px 15px;
+            text-decoration: solid;
+            border: 0.3rem solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            left: 0rem;
+        }
+
+        .hero{
+            display: flex;
+            width: 100%;
+            height: 25rem;
+            display: inline-block;
+            text-align: center;
+            background: url("/Assets/animalitos[406].png") no-repeat fixed center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-repeat: no-repeat;    
+            background-size: cover;
+            background-position-y: -50px ;
+            background-color: #EF7320;
+        }
+
+        .hero__text{
+            position: relative;
+            top: 7rem;
+            left: 1rem;
+            font-size: 1rem;
+            color: #FFB600  ;
+        }
+
+        h3{
+            color: black;
+            text-align: center;
+            font-family: 'HevelticaCond';
+            font-size: 3rem;
+        }
+
+        .header__nav{
+            position: relative;
+            right: 2rem;
+            
+            
+        }
+
+        .menupic{
+            
+            background-color: #FFB600;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 150rem;
+            
+        }
+        
+        
+        .menutext{
+            height: 8rem;
+            padding: 8rem;
+            background-color:#FFB600 ;
+            
+            }
+        
+        
+        .menutext--text{
+            font-family:'HelveticaRoman' ;
+            font-size: 1.6rem;
+        }
+        
+        .menupic__art{
+            height: 400px;
+            width: 300px;
+            
+        }
+        
+        .menupic__art--img{
+            margin-left: 0.938rem;
+            height: 13rem;
+            width: 13rem;
+           border-radius: 50%;
+        }
+        
+        .menupic__text{
+            height: 19rem;
+            width: 13rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: 'HelveticaRoman';
+            font-size: 1.4rem;
+            
+        }
+
+
+        .heroDog{
+            display: flex;
+            height: 25rem;
+            display: inline-block;
+            text-align: center;
+            background: url("/Assets/portadas_hero1_0_0.png") no-repeat fixed center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-repeat: no-repeat;    
+            background-size: cover;
+            background-position-y: -50px ;
+            background-color:  #c63637;;
+            width: 100%;
+        }
+
+        .menupicp{
+            display: inline-block;
+            background-color: #FFB600;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100rem;
+            
+        }
+
+
+        .articulosperro{
+            display: grid;
+            grid-template-columns: 20rem 20rem;
+            grid-template-rows: 30rem 30rem 30rem;
+            background-color: #FFB600;
+            justify-content: center;
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+        
+        }
+        
+        .articulosperro__hijo{
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            border: 0.2rem outset #FF4800;
+            font-family: 'HevelticaRoman';    
+            overflow: hidden;
+            
+            
+        }
+        
+        .articulosperro__title{
+            font-family: 'HevelticaCond' ;
+            position: relative;
+            left: 1.2rem;
+            height: auto;
+            width: auto;
+        }
+        
+        .articulosperro_p{
+            font-family:'HevelticaRoman';
+            position: relative;
+            left: -1rem;
+            
+        
+        }
+        
+        .articulosperro__img{
+            height: auto;
+            width: 30rem;
+            position: relative;
+            left: 2px;
+            top: -1rem;
+        
+        }
+}

@@ -1,0 +1,124 @@
+.hero{
+    display: flex;
+    width: 100%;
+    height: 25rem;
+    display: inline-block;
+    text-align: center;
+    background: url("../Assets/animalitos[406].png") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position-y: -50px ;
+    background-color: #EF7320;
+}
+
+.hero__text{
+ position: relative;
+ top: 7rem;
+ left: -25rem;
+ font-size: 2rem;
+ color: #FFB600 ;
+ 
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-family: 'HevelticaCond';
+    font-size: 3rem;
+}
+
+.menupic{
+    display: inline-block;
+    background-color: #FFB600;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40rem;
+    
+    
+}
+
+
+
+
+.menutext{
+    height: 8rem;
+    padding: 8rem;
+    background-color:#FFB600 ;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+    }
+
+
+.menutext--text{
+    font-family:'HelveticaRoman' ;
+    font-size: 1.8rem;
+}
+
+.menupic__art{
+    
+    margin:25px;
+    height: 25rem;
+    width: 18.75rem;
+    background:#FFB600;
+    border:  solid black;
+    border-color: black;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+    padding-top: 1rem
+    
+    
+}
+
+.menupic__artp{
+    height: 400px;
+    width: 300px;}
+
+.menupic__button{
+    
+    background: #EF7320;
+    font-size: 20px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 7px 0px #6d4c41;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    padding: 20px 25px;
+    position: relative;
+    top: 2.5rem;
+    cursor: pointer;
+    margin:0 20px;
+}
+
+.menupic__button:active{
+    top: 3px;
+    box-shadow: 0 2px 0px #6d4c41;
+    transition: all .2s;
+}
+
+.menupic__art--img{
+    margin-left: 0.938rem;
+    height: 13rem;
+    width: 13rem;
+   border-radius: 50%;
+   border: 0.5rem inset #EF7320 ;
+}
+
+.menupic__text{
+    height: 19rem;
+    width: 13rem;
+    font-family: 'HelveticaRoman';
+    font-size: 1rem;
+    position: relative;
+    left: 2rem;
+    
+}
