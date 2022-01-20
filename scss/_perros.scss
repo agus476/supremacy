@@ -29,12 +29,12 @@
     margin-left: 0.938rem;
     height: 13rem;
     width: 13rem;
-    border: 1rem solid #FF4800  ;
+    border: 1rem solid $secondary-color ;
    
 }
 .DogText{
     height: 7rem;
-    background-color: #FFB600 ;
+    background-color: $base-color ;
     font-family:'HevelticaCond' ;
     display: flex;
     flex-direction: row;
@@ -45,9 +45,9 @@
 }
 
 .menupicp{
-    display: inline-block;
-    background-color: #FFB600;
+    background-color: $base-color;
     width: 100%;
+    display: inline-block;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    border: 0.2rem outset #FF4800;
+    border: 0.2rem outset $secondary-color;
     font-family: 'HevelticaRoman';    
     overflow: hidden;
     padding: 1rem;

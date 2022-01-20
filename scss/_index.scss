@@ -1,3 +1,5 @@
+@import "./variables";
+
 .hero{
     display: flex;
     width: 100%;
@@ -11,7 +13,7 @@
     background-repeat: no-repeat;    
     background-size: cover;
     background-position-y: -50px ;
-    background-color: #EF7320;
+    background-color: $secondary-color;
 }
 
 .hero__text{
@@ -19,7 +21,7 @@
  top: 7rem;
  left: -25rem;
  font-size: 2rem;
- color: #FFB600 ;
+ color: $base-color;
  
 }
 
@@ -32,7 +34,7 @@ h3{
 
 .menupic{
     display: inline-block;
-    background-color: #FFB600;
+    background-color: $base-color;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -48,7 +50,7 @@ h3{
 .menutext{
     height: 8rem;
     padding: 8rem;
-    background-color:#FFB600 ;
+    background-color:$base-color ;
     display: flex;
     flex-direction: column;
    justify-content: center;
@@ -67,7 +69,7 @@ h3{
     margin:25px;
     height: 25rem;
     width: 18.75rem;
-    background:#FFB600;
+    background: $base-color ;
     border:  solid black;
     border-color: black;
     border-width: 5px 3px 3px 5px;
@@ -84,7 +86,7 @@ h3{
 
 .menupic__button{
     
-    background: #EF7320;
+    background: $secondary-color;
     font-size: 20px;
     color: white;
     border-radius: 7px;
@@ -110,7 +112,7 @@ h3{
     height: 13rem;
     width: 13rem;
    border-radius: 50%;
-   border: 0.5rem inset #EF7320 ;
+   border: 0.5rem inset $secondary-color ;
 }
 
 .menupic__text{
