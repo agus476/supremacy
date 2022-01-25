@@ -5,6 +5,12 @@ $secondary-color: #EF7320;
 $titlefont: 'HevelticaCond';
 $titletext: 'HelveticaRoman';
 
+$display: (
+ diplay: none 
+) ;
+
+
+
 @mixin HeroStyles {
     display: flex;
     width: 100%;

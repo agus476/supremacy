@@ -1,5 +1,16 @@
+@import "./variables";
+
 @media (max-width:768px)
 {
+
+     .header{
+
+    display:inline-block;
+    background-image: url("../Assets/fondo\ patitas-01[401].png");
+    width: 100vh;
+    height: 10rem;
+    
+    }
     .header__logo{
         position: relative;
         margin: 1.25rem 1.25rem 1.25rem 1.25rem;
@@ -7,34 +18,87 @@
         border-radius: 50%;
         height: 8rem;
         width: 8rem;
-        left: -2rem;
+        left: 35rem;
     }
 
-    .list__item--line{
-        text-decoration: none;
-        font-family:'HevelticaCond';
-        color:black;
-        font-size: 1rem;
-        
-        }
+    .header__nav{
+      position: relative;
+      top: -8rem;
+      left: 4rem;
+      height: auto;
+      width: auto;
+      z-index: 2;
+      
+    }
 
-        .list__item{
-    
-            color: whitesmoke;
-            position: relative;
-            display: inline-block;
-            margin-right: 15px;
-            padding: 5px 15px;
-            text-decoration: solid;
-            border: 0.3rem solid;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            left: 0rem;
+
+     .list{
+           
+            display: none;
+           
+
+            
         }
+          
+          .hamburguer1:checked  ~ .list{
+            display:block;
+            
+          }
+          
+          .hamburguer1 {
+            display: none;
+          }
+          
+          .hamburguer{
+              
+            box-sizing: border-box;
+            display: inline-block;
+            border: 1px solid #FFB600;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            text-align: center;
+            user-select: none;
+          }
+          
+          /* Estilo del boton cuando se pasa el mouse por encima*/
+          .hamburguer:hover{
+            background: #EF7320;
+          }
+          
+          /* Estilo del boton cuando el menú está expandido*/
+          .hamburguer1:checked ~ .hamburguer {
+            background: #EF7320; 
+            
+
+          }
+          
+          .list{
+            margin-top:0;
+            padding: 0;
+            width: 200px;
+          
+          }
+          
+          
+          .list__item {
+            display: block;
+            background: #FFB600;
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+            border-bottom: 3px outset #EF7320;
+            border-radius: 5px;
+          }
+          
+          .list__item:hover {
+            filter: brightness(110%);
+          }
 
         .hero{
+            position: relative;
             display: flex;
             width: 100%;
             height: 25rem;
@@ -48,6 +112,7 @@
             background-size: cover;
             background-position-y: -50px ;
             background-color: #EF7320;
+            
         }
 
         .hero__text{
@@ -99,8 +164,18 @@
         }
         
         .menupic__art{
-            height: 400px;
-            width: 300px;
+            
+                margin:25px;
+                height: 40rem;
+                width: 18.75rem;
+                background: $base-color ;
+                border:  solid black;
+                border-color: black;
+                border-width: 5px 3px 3px 5px;
+                border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+                transform: rotate(2deg);
+                padding-top: 1rem
+            
             
         }
         

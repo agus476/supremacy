@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mediaquery";
 
 
 .hero{
@@ -69,9 +70,12 @@ h3{
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
     transform: rotate(2deg);
     padding-top: 1rem
+
+    
     
     
 }
+
 
 .menupic__artp{
     height: 400px;
@@ -116,4 +120,12 @@ h3{
     position: relative;
     left: 2rem;
     
+}
+ 
+.hamburguer {
+    display: none;
+}
+
+.hamburguer1{
+    display: none;
 }
