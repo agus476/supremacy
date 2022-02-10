@@ -9,6 +9,7 @@
     background-image: url("../Assets/fondo\ patitas-01[401].png");
     width: 100vh;
     height: 10rem;
+    overflow: scroll;
     
     }
     .header__logo{
@@ -25,23 +26,22 @@
       position: relative;
       top: -8rem;
       left: 4rem;
-      height: auto;
-      width: auto;
-      z-index: 2;
-      
+     
     }
 
 
      .list{
            
+            
             display: none;
-           
+            
 
             
-        }
+}
           
           .hamburguer1:checked  ~ .list{
             display:block;
+            
             
           }
           
@@ -112,6 +112,7 @@
             background-size: cover;
             background-position-y: -50px ;
             background-color: #EF7320;
+            z-index: -3;
             
         }
 
