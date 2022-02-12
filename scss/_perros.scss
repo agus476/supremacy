@@ -52,13 +52,18 @@
     
 }
 
+.menupic__artp{
+    height: 400px;
+    width: 300px;}
+
 .articulosperro{
+    width: 100%;
     display: grid;
     grid-template-columns: 20rem 20rem 20rem;
     grid-template-rows: 35rem 35rem;
     background-color: #FFB600;
     justify-content: center;
-    grid-column-gap: 5rem;
+    grid-column-gap: 2rem;
     grid-row-gap: 5rem;
     padding: 4rem;
 

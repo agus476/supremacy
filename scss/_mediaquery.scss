@@ -1,5 +1,8 @@
 @import "./variables";
 
+
+/* HEADER MEDIAQUERY*/
+
 @media (max-width:768px)
 {
 
@@ -97,6 +100,10 @@
             filter: brightness(110%);
           }
 
+
+          /*            INDEX MEDIAQUERYS    */
+
+        
         .hero{
             position: relative;
             display: flex;
@@ -199,7 +206,7 @@
             
         }
 
-
+/*         DOGS MEDIAQUERY   */
         .heroDog{
             display: flex;
             height: 25rem;
@@ -217,14 +224,12 @@
         }
 
         .menupicp{
-            display: inline-block;
             background-color: #FFB600;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            height: 100rem;
+            display: grid;
+            grid-template-columns: 12rem 12rem;
+            grid-template-rows: 16rem 16rem;
+            height: 40rem;
             
         }
 
@@ -264,7 +269,9 @@
         .articulosperro_p{
             font-family:'HevelticaRoman';
             position: relative;
-            left: -1rem;
+            
+            font-size: 0.8rem;
+            overflow: scroll;
             
         
         }
@@ -277,4 +284,6 @@
             top: -1rem;
         
         }
+
+        
 }

@@ -32,8 +32,7 @@
   left: 5rem; }
 
 .header__nav {
-  position: relative;
-  right: 10rem; }
+  position: relative; }
 
 .list {
   display: flex;
@@ -59,12 +58,13 @@
   text-decoration: none;
   font-family: 'HevelticaCond';
   color: black;
-  font-size: 1.7rem; }
+  font-size: 1rem; }
 
 .list__item:hover {
   border-bottom: 0.3rem solid whitesmoke;
   transition: all 0.5s ease-in-out; }
 
+/* HEADER MEDIAQUERY*/
 @media (max-width: 768px) {
   .header {
     display: inline-block;
@@ -121,6 +121,7 @@
     border-radius: 5px; }
   .list__item:hover {
     filter: brightness(110%); }
+  /*            INDEX MEDIAQUERYS    */
   .hero {
     position: relative;
     display: flex;
@@ -191,6 +192,7 @@
     align-items: center;
     font-family: 'HelveticaRoman';
     font-size: 1.4rem; }
+  /*         DOGS MEDIAQUERY   */
   .heroDog {
     display: flex;
     height: 25rem;
@@ -206,14 +208,12 @@
     background-color: #c63637;
     width: 100%; }
   .menupicp, .menupicg {
-    display: inline-block;
     background-color: #FFB600;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100rem; }
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 16rem 16rem;
+    height: 40rem; }
   .articulosperro, .articulosgato, .articulosproductos {
     display: grid;
     grid-template-columns: 20rem 20rem;
@@ -240,7 +240,8 @@
   .articulosperro_p {
     font-family: 'HevelticaRoman';
     position: relative;
-    left: -1rem; }
+    font-size: 0.8rem;
+    overflow: scroll; }
   .articulosperro__img {
     height: auto;
     width: 30rem;
@@ -310,10 +311,6 @@ h3 {
   border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
   transform: rotate(2deg);
   padding-top: 1rem; }
-
-.menupic__artp {
-  height: 400px;
-  width: 300px; }
 
 .menupic__button {
   background: #EF7320;
@@ -431,13 +428,18 @@ h3 {
   justify-content: space-around;
   height: auto; }
 
+.menupic__artp {
+  height: 400px;
+  width: 300px; }
+
 .articulosperro, .articulosgato, .articulosproductos {
+  width: 100%;
   display: grid;
   grid-template-columns: 20rem 20rem 20rem;
   grid-template-rows: 35rem 35rem;
   background-color: #FFB600;
   justify-content: center;
-  grid-column-gap: 5rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 5rem;
   padding: 4rem; }
 
@@ -518,6 +520,7 @@ h3 {
   overflow: hidden;
   padding: 1rem; }
 
+/* HEADER MEDIAQUERY*/
 @media (max-width: 768px) {
   .header {
     display: inline-block;
@@ -574,6 +577,7 @@ h3 {
     border-radius: 5px; }
   .list__item:hover {
     filter: brightness(110%); }
+  /*            INDEX MEDIAQUERYS    */
   .hero {
     position: relative;
     display: flex;
@@ -644,6 +648,7 @@ h3 {
     align-items: center;
     font-family: 'HelveticaRoman';
     font-size: 1.4rem; }
+  /*         DOGS MEDIAQUERY   */
   .heroDog {
     display: flex;
     height: 25rem;
@@ -659,14 +664,12 @@ h3 {
     background-color: #c63637;
     width: 100%; }
   .menupicp, .menupicg {
-    display: inline-block;
     background-color: #FFB600;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100rem; }
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 16rem 16rem;
+    height: 40rem; }
   .articulosperro, .articulosgato, .articulosproductos {
     display: grid;
     grid-template-columns: 20rem 20rem;
@@ -693,7 +696,8 @@ h3 {
   .articulosperro_p {
     font-family: 'HevelticaRoman';
     position: relative;
-    left: -1rem; }
+    font-size: 0.8rem;
+    overflow: scroll; }
   .articulosperro__img {
     height: auto;
     width: 30rem;
@@ -714,9 +718,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -50px;
-  background-color: tomato;
-  position: relative;
-  top: 0.1rem; }
+  background-color: tomato; }
 
 .articulosproductos {
   grid-template-columns: 20rem 20rem 20rem;
@@ -757,3 +759,90 @@ h3 {
 
 .articulosproductos__boton:hover {
   background-color: white; }
+
+.heroContac {
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  display: inline-block;
+  text-align: center;
+  background: url("../Assets/portadas_hero4.png") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -50px;
+  background-color: #EF7320; }
+
+.container {
+  width: auto;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr; }
+  .container .box {
+    display: grid;
+    box-shadow: 0px 0px 10px #000; }
+    .container .box .info {
+      background-image: url(../Assets/perro-del-correo-25577897.jpg);
+      background-size: cover;
+      background-position-y: -50px;
+      background-color: #EF7320; }
+  .container form {
+    width: 100%;
+    display: grid;
+    background: #efefef;
+    padding: 10px 10px; }
+    .container form .name, .container form .pet, .container form .email, .container form .tele {
+      margin-bottom: 20px; }
+      .container form .name label, .container form .pet label, .container form .email label, .container form .tele label {
+        font-size: 14px;
+        opacity: .9; }
+      .container form .name input, .container form .pet input, .container form .email input, .container form .tele input {
+        padding: 5px;
+        outline: none;
+        border: 1px solid #FFB600;
+        width: 95%;
+        height: 60%; }
+    .container form .message {
+      grid-column: 1/3; }
+      .container form .message label {
+        font-size: 14px;
+        opacity: .9; }
+      .container form .message #message {
+        height: 90px;
+        width: 100%;
+        padding: 5px;
+        outline: none;
+        border: 1px solid #FFB600; }
+    .container form .submit {
+      grid-column: 1/3; }
+      .container form .submit input[type=submit] {
+        cursor: pointer;
+        background: #FFB600;
+        letter-spacing: .2em;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        display: block;
+        max-width: 80%;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        transition: .3s linear;
+        font-weight: bold; }
+        .container form .submit input[type=submit]:hover, .container form .submit input[type=submit]:focus {
+          color: #efefef;
+          background: #EF7320; }
+
+@media (min-width: 700px) {
+  .container h2 {
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 2em; }
+  .container .box {
+    grid-template-columns: 1fr 2fr; }
+    .container .box .info {
+      grid-row: 1/3;
+      font-size: 1.2em; } }
