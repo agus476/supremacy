@@ -422,13 +422,11 @@
     align-items: center;
     height: 150rem; }
   .menutext {
-    width: 29.59rem;
+    width: 100%;
     height: 25rem;
     padding: 3rem;
     background-color: #FFB600;
-    border: 1rem solid #FFB600;
-    position: relative;
-    left: -1rem; }
+    border: 1rem solid #FFB600; }
   .menutext--text {
     font-family: 'HelveticaRoman';
     font-size: 1.6rem; }
@@ -1438,13 +1436,11 @@ h3 {
     align-items: center;
     height: 150rem; }
   .menutext {
-    width: 29.59rem;
+    width: 100%;
     height: 25rem;
     padding: 3rem;
     background-color: #FFB600;
-    border: 1rem solid #FFB600;
-    position: relative;
-    left: -1rem; }
+    border: 1rem solid #FFB600; }
   .menutext--text {
     font-family: 'HelveticaRoman';
     font-size: 1.6rem; }
