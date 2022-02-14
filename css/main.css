@@ -69,7 +69,7 @@
   .header {
     display: inline-block;
     background-image: url("../Assets/fondo patitas-01[401].png");
-    width: 100vh;
+    width: 100%;
     height: 10rem;
     overflow: scroll; }
   .header__logo {
@@ -244,7 +244,7 @@
   /* CATS MEDIAQUERYS*/
   .heroCat {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: inline-block;
     text-align: center;
     background: url("../Assets/gatos.jpg");
@@ -272,14 +272,14 @@
   /* PRODUCTS MEDIAQUERYS*/
   .heroBuy {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: inline-block;
     text-align: center;
     background: url("../Assets/hero-productos.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -326px; }
-  .articulosperro__hijo, .articulosproductos__hijo {
+    background-position-x: -620px; }
+  .articulosproductos__hijo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,7 +292,7 @@
   /* CONTACT MEDIAQUERY*/
   .heroContac {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: inline-block;
     text-align: center;
     background: url("../Assets/portadas_hero4.png");
@@ -309,11 +309,296 @@
     .container .box .info {
       grid-row: 1/3;
       font-size: 1.2em;
-      background-position-x: -100px; } }
+      background-position-x: -200px; } }
+
+@media (max-width: 425px) {
+  /* HEADER MEDIAQUERY MOBILE */
+  .header {
+    display: inline-block;
+    background-image: url("../Assets/fondo patitas-01[401].png");
+    width: 100%;
+    height: 10rem;
+    overflow: scroll; }
+  .header__logo {
+    position: relative;
+    margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    left: 35rem; }
+  .header__nav {
+    position: relative;
+    top: -8rem;
+    left: 4rem; }
+  .list {
+    display: none; }
+  .hamburguer1:checked ~ .list {
+    display: block; }
+  .hamburguer1 {
+    display: none; }
+  .hamburguer {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #FFB600;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none; }
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .hamburguer:hover {
+    background: #EF7320; }
+  /* Estilo del boton cuando el menú está expandido*/
+  .hamburguer1:checked ~ .hamburguer {
+    background: #EF7320; }
+  .list {
+    margin-top: 0;
+    padding: 0;
+    width: 200px; }
+  .list__item {
+    display: block;
+    background: #FFB600;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 3px outset #EF7320;
+    border-radius: 5px; }
+  .list__item:hover {
+    filter: brightness(110%); }
+  /*  HERO END */
+  /* INDEX MEDIAQUERY STARTS*/
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    display: inline-block;
+    text-align: center;
+    background: url("/Assets/animalitos[406].png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -194px;
+    background-position-y: -50px;
+    background-color: #EF7320; }
+  .hero__text {
+    position: relative;
+    left: -3rem;
+    font-size: 1rem;
+    color: #FFB600; }
+  h3 {
+    color: black;
+    text-align: center;
+    font-family: 'HevelticaCond';
+    font-size: 3rem; }
+  .header__nav {
+    position: relative;
+    right: 2rem; }
+  .menupic {
+    background-color: #FFB600;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150rem; }
+  .menutext {
+    width: 100%;
+    height: 19rem;
+    padding: 8rem;
+    background-color: #FFB600;
+    border: 1rem solid #FFB600;
+    position: relative;
+    left: -3rem; }
+  .menutext--text {
+    font-family: 'HelveticaRoman';
+    font-size: 1.6rem; }
+  .menupic__art {
+    margin: 25px;
+    height: 40rem;
+    width: 18.75rem;
+    background: #FFB600;
+    border: solid black;
+    border-color: black;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+    padding-top: 1rem; }
+  .menupic__art--img {
+    margin-left: 0.938rem;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%; }
+  .menupic__text {
+    height: 19rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'HelveticaRoman';
+    font-size: 1.4rem; }
+  /* INDEX END */
+  /* FOOTER MEDIAS */
+  foot {
+    background-image: url(../Assets/fondopatitas-01[401].png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%; }
+  .buttons {
+    min-width: 372px;
+    display: flex;
+    justify-content: space-around; }
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #FF4800;
+    color: #FFB600;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out; }
+  .buttons a:hover {
+    transform: scale(1.2); }
+  /* FOOTER END*/
+  /*DOG QUERY */
+  .heroDog {
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background: url("/Assets/portadas_hero1_0_0.png");
+    background-repeat: no-repeat;
+    background-position-y: -35px;
+    background-position-x: -487px;
+    background-size: cover;
+    background-color: #FFB600; }
+  .menutextp {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFB600;
+    font-size: 1rem;
+    height: 18rem; }
+  .menupicp, .menupicg {
+    background-color: #FFB600;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 16rem 16rem;
+    height: 40rem;
+    justify-content: start; }
+  .menupic__artp {
+    height: 200px;
+    width: 220px; }
+  .menupic__textp {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 1rem;
+    font-family: 'HevelticaCond';
+    font-size: 1.4rem; }
+  .articulosperro, .articulosgato, .articulosproductos {
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    background-color: #FFB600;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: hidden; }
+  .articulosperro__hijo, .articulosproductos__hijo {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 0.2rem outset #FF4800;
+    font-family: 'HevelticaRoman';
+    overflow: hidden; }
+  .articulosperro__title {
+    font-family: 'HevelticaCond';
+    position: relative;
+    left: 1.2rem;
+    height: auto;
+    width: auto; }
+  .articulosperro_p {
+    font-family: 'HevelticaRoman';
+    position: relative;
+    font-size: 0.8rem;
+    overflow: scroll; }
+  .articulosperro__img {
+    height: auto;
+    width: 30rem;
+    position: relative;
+    left: 2px;
+    top: -1rem; }
+  /* DOG END*/
+  /* CATS QUERY */
+  .heroCat {
+    background: url("../Assets/gatos.jpg");
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background-position-y: -35px;
+    background-position-x: -487px;
+    background-size: cover;
+    background-color: #FFB600; }
+  .menutextCat {
+    width: 100%;
+    padding: 0rem;
+    font-size: 1rem;
+    height: 18rem;
+    background-color: #924E7D; }
+  .menupicg {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 16rem 16rem;
+    height: 40rem;
+    justify-content: start; }
+  .articulosgato {
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: hidden;
+    background-color: white; }
+  /* CAT END */
+  /* PRODUCTS QUERY*/
+  .heroBuy {
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background-position-y: -35px;
+    background-position-x: -487px;
+    background-size: cover;
+    background-color: #FFB600;
+    background: url("../Assets/hero-productos.png"); }
+  .articulosproductos__hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'HevelticaRoman';
+    overflow: hidden;
+    border: 0.2rem solid #EF7320;
+    background-color: #FFEB0D;
+    border-radius: 0; }
+  /* PRODUCTS END*/ }
 
 .hero {
   width: 100%;
-  height: 25rem;
+  height: 35rem;
   display: inline-block;
   text-align: center;
   background: url("../Assets/animalitos[406].png") no-repeat fixed center;
@@ -444,7 +729,7 @@ h3 {
 
 .heroDog {
   width: 100%;
-  height: 25rem;
+  height: 35rem;
   display: inline-block;
   text-align: center;
   background: url("../Assets/portadas_hero1_0_0.png") no-repeat fixed center;
@@ -456,13 +741,14 @@ h3 {
   background-position-y: -50px;
   background-color: #FFB600; }
 
-.menupic__textp {
+.menutextp {
+  height: 8rem;
+  padding: 8rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  position: relative;
-  left: -1.7rem;
-  font-family: 'HevelticaCond';
-  font-size: 1.4rem; }
+  align-items: center;
+  background-color: #FFB600; }
 
 .menupic__art--imgp, .menupic__art--imgg {
   margin-left: 0.938rem;
@@ -488,9 +774,16 @@ h3 {
   justify-content: space-around;
   height: auto; }
 
+.menupic__textp {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: 'HevelticaCond';
+  font-size: 1.4rem; }
+
 .menupic__artp {
-  height: 400px;
-  width: 300px; }
+  height: 228px;
+  width: 241px; }
 
 .articulosperro, .articulosgato, .articulosproductos {
   width: 100%;
@@ -535,7 +828,7 @@ h3 {
 
 .heroCat {
   width: 100%;
-  height: 25rem;
+  height: 35rem;
   display: inline-block;
   text-align: center;
   background: url("../Assets/gatos.jpg") no-repeat fixed center;
@@ -581,7 +874,7 @@ h3 {
 
 .heroBuy {
   width: 100%;
-  height: 25rem;
+  height: 35rem;
   display: inline-block;
   text-align: center;
   background: url("../Assets/hero-productos.png") no-repeat fixed center;
@@ -591,7 +884,16 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -50px;
-  background-color: tomato; }
+  background-color: #FFB600; }
+
+.menutextpr {
+  height: 8rem;
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB600; }
 
 .articulosproductos {
   grid-template-columns: 20rem 20rem 20rem;
@@ -635,7 +937,7 @@ h3 {
 
 .heroContac {
   width: 100%;
-  height: 25rem;
+  height: 35rem;
   display: inline-block;
   text-align: center;
   background: url("../Assets/portadas_hero4.png") no-repeat fixed center;
@@ -654,7 +956,8 @@ h3 {
   grid-template-columns: 1fr; }
   .container .box {
     display: grid;
-    box-shadow: 0px 0px 10px #000; }
+    box-shadow: 0px 0px 10px #000;
+    background-image: url(../Assets/fondo\patitas-01[401].png); }
     .container .box .info {
       background-image: url(../Assets/perro-del-correo-25577897.jpg);
       background-size: cover;
@@ -662,6 +965,7 @@ h3 {
       background-color: #EF7320; }
   .container form {
     width: 100%;
+    height: 30rem;
     display: grid;
     background: #efefef;
     padding: 10px 10px; }
@@ -715,16 +1019,16 @@ h3 {
     font-size: 2em; }
   .container .box {
     grid-template-columns: 1fr 2fr; }
-    .container .box .info {
-      grid-row: 1/3;
-      font-size: 1.2em; } }
+  .container .box .info {
+    grid-row: 1/3;
+    font-size: 1.2em; } }
 
 /* HEADER MEDIAQUERY*/
 @media (max-width: 768px) {
   .header {
     display: inline-block;
     background-image: url("../Assets/fondo patitas-01[401].png");
-    width: 100vh;
+    width: 100%;
     height: 10rem;
     overflow: scroll; }
   .header__logo {
@@ -899,7 +1203,7 @@ h3 {
   /* CATS MEDIAQUERYS*/
   .heroCat {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: inline-block;
     text-align: center;
     background: url("../Assets/gatos.jpg");
@@ -927,14 +1231,14 @@ h3 {
   /* PRODUCTS MEDIAQUERYS*/
   .heroBuy {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: inline-block;
     text-align: center;
     background: url("../Assets/hero-productos.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -326px; }
-  .articulosperro__hijo, .articulosproductos__hijo {
+    background-position-x: -620px; }
+  .articulosproductos__hijo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -947,7 +1251,7 @@ h3 {
   /* CONTACT MEDIAQUERY*/
   .heroContac {
     width: 100%;
-    height: 25rem;
+    height: 35rem;
     display: inline-block;
     text-align: center;
     background: url("../Assets/portadas_hero4.png");
@@ -964,4 +1268,289 @@ h3 {
     .container .box .info {
       grid-row: 1/3;
       font-size: 1.2em;
-      background-position-x: -100px; } }
+      background-position-x: -200px; } }
+
+@media (max-width: 425px) {
+  /* HEADER MEDIAQUERY MOBILE */
+  .header {
+    display: inline-block;
+    background-image: url("../Assets/fondo patitas-01[401].png");
+    width: 100%;
+    height: 10rem;
+    overflow: scroll; }
+  .header__logo {
+    position: relative;
+    margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    left: 35rem; }
+  .header__nav {
+    position: relative;
+    top: -8rem;
+    left: 4rem; }
+  .list {
+    display: none; }
+  .hamburguer1:checked ~ .list {
+    display: block; }
+  .hamburguer1 {
+    display: none; }
+  .hamburguer {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #FFB600;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none; }
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .hamburguer:hover {
+    background: #EF7320; }
+  /* Estilo del boton cuando el menú está expandido*/
+  .hamburguer1:checked ~ .hamburguer {
+    background: #EF7320; }
+  .list {
+    margin-top: 0;
+    padding: 0;
+    width: 200px; }
+  .list__item {
+    display: block;
+    background: #FFB600;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 3px outset #EF7320;
+    border-radius: 5px; }
+  .list__item:hover {
+    filter: brightness(110%); }
+  /*  HERO END */
+  /* INDEX MEDIAQUERY STARTS*/
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    display: inline-block;
+    text-align: center;
+    background: url("/Assets/animalitos[406].png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -194px;
+    background-position-y: -50px;
+    background-color: #EF7320; }
+  .hero__text {
+    position: relative;
+    left: -3rem;
+    font-size: 1rem;
+    color: #FFB600; }
+  h3 {
+    color: black;
+    text-align: center;
+    font-family: 'HevelticaCond';
+    font-size: 3rem; }
+  .header__nav {
+    position: relative;
+    right: 2rem; }
+  .menupic {
+    background-color: #FFB600;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150rem; }
+  .menutext {
+    width: 100%;
+    height: 19rem;
+    padding: 8rem;
+    background-color: #FFB600;
+    border: 1rem solid #FFB600;
+    position: relative;
+    left: -3rem; }
+  .menutext--text {
+    font-family: 'HelveticaRoman';
+    font-size: 1.6rem; }
+  .menupic__art {
+    margin: 25px;
+    height: 40rem;
+    width: 18.75rem;
+    background: #FFB600;
+    border: solid black;
+    border-color: black;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+    padding-top: 1rem; }
+  .menupic__art--img {
+    margin-left: 0.938rem;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%; }
+  .menupic__text {
+    height: 19rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'HelveticaRoman';
+    font-size: 1.4rem; }
+  /* INDEX END */
+  /* FOOTER MEDIAS */
+  foot {
+    background-image: url(../Assets/fondopatitas-01[401].png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%; }
+  .buttons {
+    min-width: 372px;
+    display: flex;
+    justify-content: space-around; }
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #FF4800;
+    color: #FFB600;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out; }
+  .buttons a:hover {
+    transform: scale(1.2); }
+  /* FOOTER END*/
+  /*DOG QUERY */
+  .heroDog {
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background: url("/Assets/portadas_hero1_0_0.png");
+    background-repeat: no-repeat;
+    background-position-y: -35px;
+    background-position-x: -487px;
+    background-size: cover;
+    background-color: #FFB600; }
+  .menutextp {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFB600;
+    font-size: 1rem;
+    height: 18rem; }
+  .menupicp, .menupicg {
+    background-color: #FFB600;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 16rem 16rem;
+    height: 40rem;
+    justify-content: start; }
+  .menupic__artp {
+    height: 200px;
+    width: 220px; }
+  .menupic__textp {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 1rem;
+    font-family: 'HevelticaCond';
+    font-size: 1.4rem; }
+  .articulosperro, .articulosgato, .articulosproductos {
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    background-color: #FFB600;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: hidden; }
+  .articulosperro__hijo, .articulosproductos__hijo {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 0.2rem outset #FF4800;
+    font-family: 'HevelticaRoman';
+    overflow: hidden; }
+  .articulosperro__title {
+    font-family: 'HevelticaCond';
+    position: relative;
+    left: 1.2rem;
+    height: auto;
+    width: auto; }
+  .articulosperro_p {
+    font-family: 'HevelticaRoman';
+    position: relative;
+    font-size: 0.8rem;
+    overflow: scroll; }
+  .articulosperro__img {
+    height: auto;
+    width: 30rem;
+    position: relative;
+    left: 2px;
+    top: -1rem; }
+  /* DOG END*/
+  /* CATS QUERY */
+  .heroCat {
+    background: url("../Assets/gatos.jpg");
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background-position-y: -35px;
+    background-position-x: -487px;
+    background-size: cover;
+    background-color: #FFB600; }
+  .menutextCat {
+    width: 100%;
+    padding: 0rem;
+    font-size: 1rem;
+    height: 18rem;
+    background-color: #924E7D; }
+  .menupicg {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 16rem 16rem;
+    height: 40rem;
+    justify-content: start; }
+  .articulosgato {
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: hidden;
+    background-color: white; }
+  /* CAT END */
+  /* PRODUCTS QUERY*/
+  .heroBuy {
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background-position-y: -35px;
+    background-position-x: -487px;
+    background-size: cover;
+    background-color: #FFB600;
+    background: url("../Assets/hero-productos.png"); }
+  .articulosproductos__hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'HevelticaRoman';
+    overflow: hidden;
+    border: 0.2rem solid #EF7320;
+    background-color: #FFEB0D;
+    border-radius: 0; }
+  /* PRODUCTS END*/ }

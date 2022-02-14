@@ -1,3 +1,5 @@
+@import "./variables";
+
 .heroDog{
    
 @include HeroStyles;
@@ -12,15 +14,19 @@
 }
 
 
-.menupic__textp{
+.menutextp{
+    height: 8rem;
+    padding: 8rem;
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: -1.7rem;
-    font-family: 'HevelticaCond';
-    font-size: 1.4rem;
-    
-}
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color:$base-color ;
+
+    }
+
+
+
 
 .menupic__art--imgp{
     margin-left: 0.938rem;
@@ -52,9 +58,18 @@
     
 }
 
+
+.menupic__textp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'HevelticaCond';
+    font-size: 1.4rem;
+
+}
 .menupic__artp{
-    height: 400px;
-    width: 300px;}
+    height:  228px;
+    width: 241px;}
 
 .articulosperro{
     width: 100%;

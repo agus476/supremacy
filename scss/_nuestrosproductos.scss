@@ -10,11 +10,21 @@
     background-repeat: no-repeat;    
     background-size: cover;
     background-position-y: -50px ;
-    background-color: tomato;
+    background-color: $base-color;
     
     
 
 
+}
+
+.menutextpr{
+    height: 8rem;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color:$base-color ;
 }
 .articulosproductos{
     @extend .articulosperro;
