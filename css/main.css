@@ -138,6 +138,7 @@
     position: relative;
     top: 7rem;
     left: 1rem;
+    width: 47rem;
     font-size: 3rem;
     color: #FFB600; }
   h3 {
@@ -207,6 +208,16 @@
     grid-template-columns: 12rem 12rem;
     grid-template-rows: 16rem 16rem;
     height: 40rem; }
+  .menupic__artp {
+    height: 200px;
+    width: 220px; }
+  .menupic__textp {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 1rem;
+    font-family: 'HevelticaCond';
+    font-size: 1.4rem; }
   .articulosperro, .articulosgato, .articulosproductos {
     display: grid;
     grid-template-columns: 20rem 20rem;
@@ -222,8 +233,7 @@
     align-items: center;
     border-radius: 20px;
     border: 0.2rem outset #FF4800;
-    font-family: 'HevelticaRoman';
-    overflow: hidden; }
+    font-family: 'HevelticaRoman'; }
   .articulosperro__title {
     font-family: 'HevelticaCond';
     position: relative;
@@ -279,12 +289,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -620px; }
+  .menutextpr {
+    height: 20rem;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB600; }
   .articulosproductos__hijo {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'HevelticaRoman';
-    overflow: hidden;
     border: 0.2rem solid #EF7320;
     background-color: #FFEB0D;
     border-radius: 0; }
@@ -385,6 +402,7 @@
   .hero__text {
     position: relative;
     left: -3rem;
+    width: 29rem;
     font-size: 1rem;
     color: #FFB600; }
   h3 {
@@ -404,13 +422,13 @@
     align-items: center;
     height: 150rem; }
   .menutext {
-    width: 100%;
-    height: 19rem;
-    padding: 8rem;
+    width: 29.59rem;
+    height: 25rem;
+    padding: 3rem;
     background-color: #FFB600;
     border: 1rem solid #FFB600;
     position: relative;
-    left: -3rem; }
+    left: -1rem; }
   .menutext--text {
     font-family: 'HelveticaRoman';
     font-size: 1.6rem; }
@@ -567,7 +585,7 @@
   .articulosgato {
     display: grid;
     grid-template-columns: 20rem;
-    grid-template-rows: 30rem 30rem 30rem 30rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem;
     justify-content: center;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -580,11 +598,29 @@
     height: 22rem;
     display: inline-block;
     text-align: center;
+    background: url("../Assets/hero-productos.png");
     background-position-y: -35px;
     background-position-x: -487px;
     background-size: cover;
+    background-color: #FFB600; }
+  .menutextpr {
+    height: 25rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB600; }
+  .articulosproductos {
+    width: 100%;
+    display: grid;
     background-color: #FFB600;
-    background: url("../Assets/hero-productos.png"); }
+    justify-content: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    padding: 4rem;
+    grid-template-columns: 20rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem; }
   .articulosproductos__hijo {
     display: flex;
     flex-direction: column;
@@ -594,7 +630,28 @@
     border: 0.2rem solid #EF7320;
     background-color: #FFEB0D;
     border-radius: 0; }
-  /* PRODUCTS END*/ }
+  /* PRODUCTS END*/
+  /* CONTACT QUERY*/
+  .heroContac {
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background: url("../Assets/portadas_hero4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -200px;
+    background-color: #EF7320; }
+  .container h2 {
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 2em; }
+  .container .box {
+    grid-template-columns: 1fr 2fr; }
+    .container .box .info {
+      grid-row: 1/3;
+      font-size: 1.2em;
+      background-position-x: -200px; } }
 
 .hero {
   width: 100%;
@@ -1097,6 +1154,7 @@ h3 {
     position: relative;
     top: 7rem;
     left: 1rem;
+    width: 47rem;
     font-size: 3rem;
     color: #FFB600; }
   h3 {
@@ -1166,6 +1224,16 @@ h3 {
     grid-template-columns: 12rem 12rem;
     grid-template-rows: 16rem 16rem;
     height: 40rem; }
+  .menupic__artp {
+    height: 200px;
+    width: 220px; }
+  .menupic__textp {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 1rem;
+    font-family: 'HevelticaCond';
+    font-size: 1.4rem; }
   .articulosperro, .articulosgato, .articulosproductos {
     display: grid;
     grid-template-columns: 20rem 20rem;
@@ -1181,8 +1249,7 @@ h3 {
     align-items: center;
     border-radius: 20px;
     border: 0.2rem outset #FF4800;
-    font-family: 'HevelticaRoman';
-    overflow: hidden; }
+    font-family: 'HevelticaRoman'; }
   .articulosperro__title {
     font-family: 'HevelticaCond';
     position: relative;
@@ -1238,12 +1305,19 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -620px; }
+  .menutextpr {
+    height: 20rem;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB600; }
   .articulosproductos__hijo {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'HevelticaRoman';
-    overflow: hidden;
     border: 0.2rem solid #EF7320;
     background-color: #FFEB0D;
     border-radius: 0; }
@@ -1344,6 +1418,7 @@ h3 {
   .hero__text {
     position: relative;
     left: -3rem;
+    width: 29rem;
     font-size: 1rem;
     color: #FFB600; }
   h3 {
@@ -1363,13 +1438,13 @@ h3 {
     align-items: center;
     height: 150rem; }
   .menutext {
-    width: 100%;
-    height: 19rem;
-    padding: 8rem;
+    width: 29.59rem;
+    height: 25rem;
+    padding: 3rem;
     background-color: #FFB600;
     border: 1rem solid #FFB600;
     position: relative;
-    left: -3rem; }
+    left: -1rem; }
   .menutext--text {
     font-family: 'HelveticaRoman';
     font-size: 1.6rem; }
@@ -1526,7 +1601,7 @@ h3 {
   .articulosgato {
     display: grid;
     grid-template-columns: 20rem;
-    grid-template-rows: 30rem 30rem 30rem 30rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem;
     justify-content: center;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
@@ -1539,11 +1614,29 @@ h3 {
     height: 22rem;
     display: inline-block;
     text-align: center;
+    background: url("../Assets/hero-productos.png");
     background-position-y: -35px;
     background-position-x: -487px;
     background-size: cover;
+    background-color: #FFB600; }
+  .menutextpr {
+    height: 25rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB600; }
+  .articulosproductos {
+    width: 100%;
+    display: grid;
     background-color: #FFB600;
-    background: url("../Assets/hero-productos.png"); }
+    justify-content: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    padding: 4rem;
+    grid-template-columns: 20rem;
+    grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem; }
   .articulosproductos__hijo {
     display: flex;
     flex-direction: column;
@@ -1553,4 +1646,25 @@ h3 {
     border: 0.2rem solid #EF7320;
     background-color: #FFEB0D;
     border-radius: 0; }
-  /* PRODUCTS END*/ }
+  /* PRODUCTS END*/
+  /* CONTACT QUERY*/
+  .heroContac {
+    width: 100%;
+    height: 22rem;
+    display: inline-block;
+    text-align: center;
+    background: url("../Assets/portadas_hero4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -200px;
+    background-color: #EF7320; }
+  .container h2 {
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 2em; }
+  .container .box {
+    grid-template-columns: 1fr 2fr; }
+    .container .box .info {
+      grid-row: 1/3;
+      font-size: 1.2em;
+      background-position-x: -200px; } }
